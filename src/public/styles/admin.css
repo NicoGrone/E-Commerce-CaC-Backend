@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #333333;
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 90%;
+    z-index: 1000;
+    /* Para asegurar que el encabezado esté sobre otros elementos */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1A1A1A;
+    /* Color de fondo del encabezado */
+    padding: 10px 5%;
+    border: 0px;
+    border-bottom: 0.4rem;
+    border-color: #2F27CE;
+    border-style: solid;
+}
+
+header h1 {
+    margin: 0;
+    color: #fff;
+    /* Color del texto del título */
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #5a53db;
+}
+
+.buttonNav{
+    font-size: 1rem;
+    color: white;
+    font-weight:bold;
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    gap: 30px;
+}
+
+h1 {
+    text-align: center;
+}
+table{
+    color: white;
+}
+
+

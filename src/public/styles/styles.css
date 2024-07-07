@@ -1,0 +1,257 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #333333;
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 90%;
+    z-index: 1000;
+    /* Para asegurar que el encabezado esté sobre otros elementos */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1A1A1A;
+    /* Color de fondo del encabezado */
+    padding: 10px 5%;
+    border: 0px;
+    border-bottom: 0.4rem;
+    border-color: #2F27CE;
+    border-style: solid;
+}
+
+header h1 {
+    margin: 0;
+    color: #fff;
+    /* Color del texto del título */
+}
+
+header>form {
+    flex-grow: 1;
+    /* Para que el formulario ocupe todo el espacio disponible */
+    text-align: center;
+    /* Para centrar el formulario */
+}
+
+.buttonNav{
+    font-size: 1rem;
+    color: white;
+    font-weight:bold;
+    text-decoration: none;
+}
+
+input[type="text"] {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    width: 200px;
+    /* Ancho del campo de entrada */
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+
+button:hover {
+    background-color: #5a53db;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #5a53db;
+}
+
+nav{
+    display: flex;
+    gap: 30px;
+}
+
+main {
+    margin-bottom: 80px;
+    /* Ajusta según la altura del encabezado para evitar que el contenido se superponga */
+}
+
+footer {
+    background-color: #1A1A1A;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position:relative;
+    bottom: 0;
+    width: 99,3%;
+    border-width: 0.3rem 0rem 0rem 0rem;
+    /* Grosor de bordes */
+    border-style: solid;
+    border-color: #2F27CE;
+
+}
+
+.imagen-contenedor {
+    border: 10px solid #ccc;
+    /* Borde sólido y color gris */
+    padding: 10px;
+    /* Espacio interno alrededor de la imagen */
+    display: inline-block;
+    /* Mostrar como bloque en línea */
+}
+
+/* Estilos para la imagen dentro del contenedor */
+.imagen-contenedor img {
+    width: 100%;
+    /* Ajustar el ancho de la imagen al contenedor */
+    height: auto;
+    /* Mantener la proporción de aspecto */
+    display: block;
+    /* Evitar espacios adicionales debajo de la imagen */
+}
+
+img {
+    max-width: 100%;
+    max-height: 200px;
+}
+
+div>.columnas {
+    padding: 0%;
+}
+
+.columnas>ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    gap: 30px;
+    text-align: center;
+    padding-inline-start: 0%;
+    padding-inline-end: 0%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+div>h3 {
+    text-align: center;
+    color: #fff;
+    text-decoration: underline;
+}
+
+section>h4 {
+    text-align: center;
+    margin: 40px 20px 20px 20px;
+}
+
+.aboutCard {
+    margin: 4rem;
+    border: 2px;
+    border-color: #2F27CE;
+    border-style: solid;
+    background-color: #DDDBFF;
+    border-radius: 25px;
+}
+
+.columnas>ul>li {
+    display: flex;
+    flex-direction: column;
+    border: 2px;
+    border-style: solid;
+    border-color: #2F27CE;
+    border-radius: 10px;
+    padding: 0.5em 0.5em 0.5em;
+    color: black;
+    background-color: white;
+    list-style: none;
+}
+
+.formContact {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 0px;
+    color: rgb(49, 48, 53);
+    background-color: #DDDBFF;
+    border: 2px;
+    border-style: solid;
+    border-color: #2F27CE;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 10px;
+}
+
+body>h1 {
+    text-align: center;
+    color: #DDDBFF;
+}
+
+body>section>h2 {
+    text-align: center;
+    color: #DDDBFF;
+}
+
+.welcome {
+    text-align: center;
+}
+
+
+
+.descrip{
+    flex: 1;
+}
+
+.add-to-cart {
+    font-weight: bold;
+    display: 2;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.swiper-container > .swiper-wrapper > div {
+    padding-bottom: 30px;
+    width: 430px;
+    height: 430px;
+    display: flex;
+}
+
+.swiper-pagination{
+    margin-bottom: 30px;
+}

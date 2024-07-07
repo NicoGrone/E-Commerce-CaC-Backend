@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/carrito.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Carrito</title>
+</head>
+
+<body>
+    <header>
+        <h1>LuxPeri</h1>
+        <!--
+        <form action="#" method="get" class="formsearch">
+            <input type="text" name="search" placeholder="Buscar...">
+            <button type="submit">Buscar</button>
+        </form>
+        -->
+        <nav>
+            
+                <button><a href="/index.html" class="buttonNav">Inicio</a></button>
+                <button><a href="/productos.html" class="buttonNav">Productos</a></button>
+                <button><a href="/about.html" class="buttonNav">Sobre nosotros</a></button>
+                <button><a href="/contact.html" class="buttonNav">Contacto</a></button>
+                <button class="buttonNav">Carrito de Compras</button>
+        </nav>
+    </header>
+    <section class="general">
+        <section class="container-product">
+            <div class="product" data-id="1" data-name="auricular" data-precio="100,00$">
+                <img src="IMG_20240518_123448.jpg" alt="auricular">
+                <h2>Cloud Stinger Auriculares HyperX</h2>
+                <p class="precio">100,00$</p>
+                <button class="agregar">Agregar al Carrito</button>
+            </div>
+            <div class="product" data-id="2" data-name="mouse" data-precio="100,00$">
+                <img src="IMG_20240518_123349.jpg" alt="mouse">
+                <h2>Mouse Gamer Pulsefire core HyperX</h2>
+                <p class="precio">100,00$</p>
+                <button class="agregar">Agregar al Carrito</button>
+            </div>
+            <div class="product" data-id="3" data-name="teclado" data-precio="100,00$">
+                <img src="IMG_20240518_123406.jpg" alt="auricular">
+                <h2>Teclado gamer Alloy Core HyperX</h2>
+                <p class="precio">100,00$</p>
+                <button class="agregar">Agregar al Carrito</button>
+            </div>
+            <div class="product" data-id="4" data-name="monitor" data-precio="100,00$">
+                <img src="IMG_20240518_205459.jpg" alt="monitor">
+                <h2>Monitor de juegos curvado de 32 pulgadas </h2>
+                <p class="precio">100,00$</p>
+                <button class="agregar">Agregar al Carrito</button>
+            </div>
+        </section>
+        <section class="carrito">
+            <h2>Tu carrito</h2>
+            <ul class="art-list"></ul>
+            <p class="total">Total: $ <span> 0.00</span></p>
+            <button class="limp-car">Limpiar Carrito</button>
+        </section>
+    </section>
+</body>
+
+</html>
