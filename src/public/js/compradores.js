@@ -10,8 +10,11 @@ document.addEventListener('DOMContentLoaded', async function () {
                 compradorElement.innerHTML = `<td>${comprador.id}</td>
                         <td>${comprador.nombre}</td>
                         <td>${comprador.direccion}</td>
-                        <td>${comprador.telefono}</td>`;
+                        <td>${comprador.telefono}</td>
+                        <td><a href="/admin/editCompradores.html?id=${comprador.id}"class="btnEdit">Editar</a></td>
+                        <td><button> Borrar</button></td>`;
                 compradores.appendChild(compradorElement)
+                console.log(compradorElement);
             });
 
         })

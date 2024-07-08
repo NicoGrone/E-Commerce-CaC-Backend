@@ -50,13 +50,42 @@ controller.todos = (req, res) => {
 
 controller.producto = (req, res) => {
     const { id } = req.params;
-    req.getConnection((err,conn) => {conn.query('SELECT * FROM producto WHERE id = ?', [id], (err, producto) =>{
-        if (err){
+    req.getConnection(async (err,conn) => {
+        try {
+            const producto = await new Promise((resolve, reject) => {
+                conn.query(
+                    'SELECT * FROM producto WHERE id = ?',
+                    [id],
+                    (err, fila) => {
+                        if (err){
+                            reject(err);
+                        }
+                        resolve(fila);
+                    }
+                );
+            });
+
+            const categorias = await new Promise((resolve, reject) => {
+                conn.query(
+                    'SELECT * FROM categorias JOIN categoriaproductos ON categorias.id= categoriaproductos.id_categoria WHERE categoriaproductos.id_producto= ?',
+                    [id],
+                    (err, filas) => {
+                        if (err){
+                            reject(err);
+                        }
+                        resolve(filas);
+                    }
+                );
+            });
+
+            res.send({
+                producto,
+                categorias,
+            });
+        } catch (err) {
             res.json(err);
         }
-        res.send(producto);
-        });
-    })
+    });
 }
 
 

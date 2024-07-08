@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', async function () {
                         <td>${producto.descripcion}</td>
                         <td>${producto.precio}</td>
                         <td>${producto.stock}</td>
-                        <td><a href="/editProductos.html?id" class="btnEdit" >Editar</a></td>
-                        <td><button> Borrar</button></td>`;
+                        <td><a href="/admin/editProductos.html?id=${producto.id}" class="btnEdit" >Editar</a></td>
+                        <td><button>Borrar</button></td>`;
                 productos.appendChild(productoElement)
             });
 
